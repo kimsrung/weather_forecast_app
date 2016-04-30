@@ -1,0 +1,8 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"> {{ convertToDateTime(weatherDay.dt) | date:'yyyy MMM dd' }}</h3>
+  </div>
+  <div class="panel-body">
+    Daytime temperature: {{ convertToFehrenheit(weatherDay.temp.day) }}°{{degree | uppercase}}
+  </div>
+</div>
